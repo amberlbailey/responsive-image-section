@@ -11,7 +11,6 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
 
-  background-color: #e2e2e2;
   font-family: sans-serif;
 }
 
@@ -20,12 +19,18 @@ html {
 }
 
 body {
-  margin: 1rem;
+  margin: 0;
+}
+
+section {
+  background-color: #e2e2e2;
 }
 
 .content {
   text-align: left;
+  padding: 1rem;
 }
+
 
 a {
   padding: 0.5em 0.75em;
@@ -74,6 +79,36 @@ a:hover {
     display: inline-block;
     width: 48%;
     vertical-align: middle;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5rem;
+    font-size: 120%;
+  }
+
+  h1 {
+    padding-top: 1em;
+  }
+
+.img {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .img {
+    width: 40%;
   }
 
 }
